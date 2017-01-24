@@ -1,0 +1,338 @@
+
+$border-color:#a68c6b
+
+
+@mixin default-container($b:0)
+	display: block
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	box-sizing: border-box
+	border: #{$b}px solid red
+
+
+
++keyframes(arr-move)
+	
+	0%
+		margin-top: 32px
+	100% 
+		margin-top: 26px
+
+
+	
+#header
+	height: 60px
+	width: 100%
+	position: absolute
+	top: 0
+	left: 0
+	.headerContainer	
+		height: 60px
+		#menuBtn
+			+bg('menuBtn.png')
+			background-repeat: no-repeat
+			background-position: 68% 50%
+			width: 150px	
+			height: 55px
+			position: absolute
+			top: 0px
+			right: 0px
+			+dTime(0.6s)
+			z-index: 5
+			+phone 
+				+bg('m_menu.png')
+				z-index: 15
+
+		#mainNav
+			overflow: hidden
+			position: absolute
+			top: -55px
+			left: 0
+			display: block
+			height: 55px
+			width: 100%
+			background-color: #FFF
+			z-index: 5
+			+dTime(0.8s)
+			ul 
+				margin-top: 12px
+				display: block
+				float: right
+				margin-right: 143px	
+				li 
+					margin-left: 8px
+					display: block
+					float: left
+					+dTime(0.3s)
+					+opacity(1)
+					cursor: pointer
+					+pc 
+						@for $i from 1 to 6
+							#navItem#{$i}
+								+dTime
+								+bg('nav/navItem_0#{$i}.png')
+								+hide-text
+						
+					&:hover 
+						+opacity(0.7)
+
+			+phone 
+				max-height: 55px
+				height: auto
+				overflow: hidden
+				ul 
+					margin-top: 90px
+					text-align: center
+					float: none
+					margin-right: auto
+					li 
+						display: block
+						float: none
+						margin-left: auto
+						font-size: 26px
+						padding: 26px 0
+						position: relative
+						a:hover 
+							color: black
+							text-decoration: none
+						&:not(:last-child)
+							&:after 
+								content: ''
+								position: absolute
+								bottom: 0
+								+bg('m_menuLine.png')
+								left: 50%
+								margin-left: -302px
+					
+							// #navItem#{$i}
+							// 	+dTime
+							// 	+bg('nav/navItem_0#{$i}.png')
+							// 	+hide-text
+			#headerPen
+				position: absolute
+				right: 0
+				top: 13px
+				margin-right: -34px
+				+bg('nav/menuPen.png')
+				#shraeBtn
+					+bg('nav/shareBtn.png')
+					position: absolute
+					top: 8px
+					left: 60px
+					cursor: pointer
+				+phone 
+					display: none
+
+
+		.navBlackBg
+			position: absolute
+			top: -55px
+			left: 0
+			background-color: black 
+			display: block
+			height: 55px
+			width: 100%
+			z-index: 2
+			+dTime(0.8s)
+			+transition-timing-function(ease-in-out)
+			+transition-delay(1s)
+			+phone 
+				height: 90px
+				top: -90px
+		.mainLogo
+			position: absolute
+			left: 0
+			top: 0
+			margin-top: 12px
+			margin-left: 23px
+			z-index: 5
+			+bg('logo_white.png')
+			+dTime
+			// &.blackLogo 
+			// 	+bg('logo_black.png') 
+			+phone 
+				+bg('m_logo_w.png')
+				top: 15px
+
+		&.blackBgNav
+			+pc
+				#mainNav
+					background-color: transparent
+					ul
+						li
+					
+							@for $i from 1 to 6
+								#navItem#{$i}
+									+bg('nav/navItem_0#{$i}_w.png')
+					#headerPen
+						+bg('nav/menuPen_w.png')
+						
+						#shraeBtn
+							+bg('nav/shareBtn_w.png')
+
+			+phone 
+				#mainNav
+					background-color: black
+					ul 
+					
+						li 
+							color: white
+							a 
+								color: white
+							a:hover 
+								color: white
+								// text-decoration: none 
+
+			.navBlackBg
+				top: 0
+
+			// .mainLogo
+			// 	+bg('logo_black.png')
+
+		&.showNav
+			#mainNav
+				top: 0px
+				+phone 
+					max-height: 600px
+			#menuBtn
+				+pc
+					+opacity(0)
+
+				// +phone 
+				// 	+bg('m_menu_b.png')
+
+			
+			&:not(.blackBgNav)
+				.mainLogo 
+					+bg('logo_black.png')
+					+phone 
+						+bg('m_logo_b.png')
+				#menuBtn
+					+phone 
+						+bg('m_menu_b.png')
+		&.hideMenuBtn
+			pointer-events: none
+			#menuBtn
+				+dTime(0.6s)
+				+opacity(0)
+
+	.borderContainer
+		position: absolute
+		top: 0
+		left: 0
+		
+		.scrollDwonIcon
+			+bg('scrollBg.png')
+			position: fixed
+			bottom: 0
+			left: 50%
+			margin-left: -53px
+			cursor: pointer
+
+			.scrollArr
+				+bg('scrollDownArr.png')
+				margin: 26px auto
+				+animation(arr-move 0.5s infinite alternate both ease-in-out)
+
+
+		#backBtn
+			+bg('backBtnBg.png')
+			position: fixed
+			top: 45%
+			right: -66px
+			cursor: pointer
+
+			.backText
+				+bg('backText.png')
+				margin: 60px auto auto 17px
+
+		.sideBorder
+			pointer-events: none 
+
+
+			.b-top
+				position: fixed
+				left: 17px
+				top: 55px
+				right: 17px
+				border-top: 1px solid $border-color
+				+dTime
+				+phone 
+					top: 90px
+
+			.b-left
+				position: fixed
+				left: 17px
+				top: 55px
+				bottom: 15px
+				border-left: 1px solid $border-color
+				+dTime
+				+phone 
+					top: 90px
+
+
+			.b-right
+				position: fixed
+				right: 17px
+				top: 55px
+				bottom: 15px
+				border-right: 1px solid $border-color
+				+dTime
+				+phone 
+					top: 90px
+
+			.b-Bottom-left
+				position: fixed
+				left: 17px
+				bottom: 17px
+				border-bottom: 1px solid $border-color
+				
+
+			.b-Bottom-right
+				position: fixed
+				right: 17px
+				bottom: 17px
+				border-bottom: 1px solid $border-color
+					
+
+		&.showNav
+			.sideBorder
+				.b-top,.b-left,.b-right
+					+pc 
+						top: 70px
+	
+
+	
+
+
+// 	&.showCaseClozBtn
+// 		#menuBtn
+// 			top: -55px
+
+// 		.header-container
+// 			#clozBtn_forShowCase
+// 				visibility: visible
+// 				display: block
+// 				opacity: 1
+// 				+rotate(90deg)
+
+
+// #clozBtn_forShowCase
+// 	cursor: pointer
+// 	position: absolute
+// 	top: 15px
+// 	right: 15px
+// 	+bg('clozBtn.png')
+// 	visibility: hidden
+// 	opacity: 0
+// 	// +transition(opacity,0.4s)
+// 	+dTime(0.4s)
+// 	+rotate(0deg)
+// 	&:hover 
+// 		+rotate(180deg)
+	
+
+		

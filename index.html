@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Leo Burnett Taiwan</title>
+    <meta name="viewport" content="width=640,user-scalable=0">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <meta name="title" content="李奧貝納連續10年，蟬聯台灣第一大廣告代理商" />
+    <meta name="description" content="請進入李奧貝納官網，探訪為品牌伸手摘星的秘密" />
+    <meta name="keywords" content="Leo Burnett,leoburnett,李奧貝納,廣告,十年,第一,廣告代理商,品牌" />
+    <!-- <meta name="copyright" content="" /> -->
+    <link rel="image_src" href="http://www.citibank.com.tw/global_docs/chi/cb/160407_gm/images/share.jpg" />
+    <meta property="og:title" content="李奧貝納連續10年，蟬聯台灣第一大廣告代理商" />
+    <meta property="og:site_name" content="李奧貝納連續10年，蟬聯台灣第一大廣告代理商" />
+    <meta property="og:description" content="請進入李奧貝納官網，探訪為品牌伸手摘星的秘密" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://www.leoburnett.com.tw/images/share.png" />
+    <meta property="og:url" content="http://www.leoburnett.com.tw/" />
+    <link rel="stylesheet" href="css/default.css">
+    <!-- plugIn js -->
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/TweenMax.min.js"></script>
+    <script src="js/lib/TimelineLite.min.js"></script>
+    <script src="js/lib/jquery.mousewheel.js"></script>
+    <!--  <script src="js/video.js"></script> -->
+    <!-- <script src="http://vjs.zencdn.net/5.5.3/video.js"></script> -->
+    <script src="js/lib/jquery.waitforimages.min.js"></script>
+    <!-- my plugIn -->
+    <script src="js/chung/ItemMoveWithMouse.js"></script>
+    <script src="js/chung/mouseXY.js"></script>
+    <script src="js/chung/browserTool.js"></script>
+    <script src="js/chung/mouseMoveScroll.js"></script>
+    <script src="js/chung/ResizeManager.js"></script>
+    <script src="js/chung/motions/upDownFadeIn.js"></script>
+    <script src="js/chung/ChungTool.js"></script>
+    <!-- page js -->
+    <script src="js/variable.js"></script>
+    <script src="js/motion/PageMotion.js"></script>
+    <script src="js/scrollFn.js"></script>
+    <!-- <script src="js/SoundControler.js"></script> -->
+    <!-- <script src="js/subClient.js"></script> -->
+    <!-- <script src="js/videoPage.js"></script> -->
+    <script src="js/subShowCase.js"></script>
+    <!-- endJs -->
+    <script src="js/menuFn.js"></script>
+    <!-- <script src="js/mainJs.js"></script> -->
+    <script src="js/resize.js"></script>
+    <!--[if lte IE 8]>
+    <script src="js/ie.js"></script>
+    <![endif]-->
+    <!--[if  IE 7]>
+    <link rel="stylesheet" href="css/ie.css">   
+    <![endif]-->
+    <script>
+    if (!chungTool.isOnline()) {
+        document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+    }
+    </script>
+</head>
+
+<body>
+    <!-- bgMusic -->
+    <div class="loadingPage">
+        <div class="blackBg"></div>
+        <div id="preloader">
+            <div class="loadingLogo"></div>
+            <!-- <div class="loadingMask"></div> -->
+        </div>
+        <div id="loadingBar" class="loadingBar">
+        </div>
+    </div>
+    <div class="mainContainer" id="mainContainer" style='display: none'>
+        <!-- 01. background -->
+        <div class="background">
+            <div class="bg-content" id='bg-content'>
+                <div class="bg-move">
+                    <div class="bg bg1"><img class='phoneHide' src="images/bg_01.jpg" alt="">
+                    <img src="images/m_bg1.jpg" alt="" class="phoneShow"></div>
+                    <div class="bg bg2"><img class='phoneHide' src="images/bg_02.jpg" alt="">
+                    <img src="images/m_bg2.jpg" alt="" class="phoneShow"></div>
+                    <div class="bg bg3"><img class='phoneHide' src="images/bg_03.jpg" alt="">
+                    <img src="images/m_bg3.jpg" alt="" class="phoneShow"></div>
+                    <div class="bg bg4"><img class='phoneHide' src="images/bg_04.jpg" alt="">
+                    <img src="images/m_bg4.jpg" alt="" class="phoneShow"></div>
+                    <div class="bg bg5"><img class='phoneHide' src="images/bg_05.jpg" alt="">
+                    <img src="images/m_bg5.jpg" alt="" class="phoneShow"></div>
+                </div>
+            </div>
+            <div class="starContainer"></div>
+            <div class="starBg-container">
+                <div class="starBg">
+                </div>
+            </div>
+            <div class="starBg-container2">
+                <div class="starBg2">
+                </div>
+            </div>
+        </div>
+        <!-- background end-->
+        <!-- intro_black -->
+        <!-- <div id="introBlack"></div> -->
+        <!--<div class="testDemoCut"></div>  -->
+        <!-- 02. mainWrap -->
+        <div class="wrap" id='mainWrap'>
+            <div class="wrap-container">
+                <!-- a.首頁index -->
+                <div class="page p1" id="index">
+                    <div class="indexTitle pagetitle" id="indexTitle">
+                        <!-- <div id="index_t1">REACHING FOR THE STARS</div> -->
+                        <div class="title" id="index_t1">
+                            <div class="motionText" id="index_t1_t1"></div>
+                            <div class="motionText" id="index_t1_t2"></div>
+                            <div class="motionText" id="index_t1_t3"></div>
+                            <div class="motionText" id="index_t1_t4"></div>
+                            <div class="motionText" id="index_t1_t5"></div>
+                            <div class="motionText" id="index_t1_t6"></div>
+                            <div class="motionText" id="index_t1_t7"></div>
+                            <div class="motionText" id="index_t1_t8"></div>
+                            <div class="motionText" id="index_t1_t9"></div>
+                            <div class="motionText" id="index_t1_t10"></div>
+                            <div class="motionText" id="index_t1_t11"></div>
+                            <div class="motionText" id="index_t1_t12"></div>
+                            <div class="motionText" id="index_t1_t13"></div>
+                            <div class="motionText" id="index_t1_t14"></div>
+                            <div class="motionText" id="index_t1_t15"></div>
+                            <div class="motionText" id="index_t1_t16"></div>
+                            <div class="motionText" id="index_t1_t17"></div>
+                            <div class="motionText" id="index_t1_t18"></div>
+                            <div class="motionText" id="index_t1_t19"></div>
+                            <div class="motionText" id="index_t1_t20"></div>
+                            <div class="motionText" id="index_t1_t21"></div>
+                            <div class="motionText" id="index_t1_t22"></div>
+                            <div class="motionText" id="index_t1_t23"></div>
+                        </div>
+                        <div id="index_t2">我們以伸手摘星的信仰，為客戶綻放領導品牌的光芒李奧貝納才能連續8年蟬聯台灣第一大廣告代理商</div>
+                        <div class="pageBtn" id="index_b1">
+                            <div class="pageBtnLine" id="l1"></div>
+                            <div class="pageBtnText">啟動品牌摘星之旅</div>
+                            <div class="pageBtnLine" id="l2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block"></div>
+                <!-- b.客戶client -->
+                <div class="page p2" id="client">
+                    <div class="clientTitle pagetitle" id="clientTitle">
+                        <!--  <div class="client_t1">CONCRETE RESULTS</div>-->
+                        <div id="client_t1" class="en_title">
+                            <div class="motionText" id="client_t1_t1"></div>
+                            <div class="motionText" id="client_t1_t2"></div>
+                            <div class="motionText" id="client_t1_t3"></div>
+                            <div class="motionText" id="client_t1_t4"></div>
+                            <div class="motionText" id="client_t1_t5"></div>
+                            <div class="motionText" id="client_t1_t6"></div>
+                            <div class="motionText" id="client_t1_t7"></div>
+                            <div class="motionText" id="client_t1_t8"></div>
+                            <div class="motionText" id="client_t1_t9"></div>
+                            <div class="motionText" id="client_t1_t10"></div>
+                            <div class="motionText" id="client_t1_t11"></div>
+                            <div class="motionText" id="client_t1_t12"></div>
+                            <div class="motionText" id="client_t1_t13"></div>
+                            <div class="motionText" id="client_t1_t14"></div>
+                            <div class="motionText" id="client_t1_t15"></div>
+                            <div class="motionText" id="client_t1_t16"></div>
+                        </div>
+                        <div class="client_t2 chi_title" id="client_t2">成效證明一切</div>
+                        <!-- <div class="client_ct" id="client_ct">李奧貝納84%的客戶，來自平均合作8年以上的領導品牌；我們能讓涵蓋各產業別，市占已最高的品牌持續成長，就能讓您的品牌開始伸手摘星</div> -->
+                        <div class="subTxtWrap mt_b">
+                            <div class="mainPageTxt">李奧貝納84%的客戶都是領導品牌</div>
+                            <div class="mainPageTxt">涵蓋通路、金融、汽車、食品、酒類、3C科技..</div>
+                            <div class="mainPageTxt">平均合作時間長達10年以上</div>
+                        </div>
+                        <!-- <div class="client_ct content_text" id="client_ct">
+                            <ul>
+                                <li class="text1"></li>
+                                <li class="text2"></li>
+                                <li class="text3"></li>
+                            </ul>
+                        </div> -->
+                        <div class="pageBtn" id="client_b1">
+                            <div class="pageBtnLine"></div>
+                            <div class="pageBtnText">我們的客戶陣容</div>
+                            <div class="pageBtnLine"></div>
+                        </div>
+                    </div>
+                    <div class="clientPic mainPic">
+                        <div class="subPic" id="client_pic1"></div>
+                        <div class="subPic" id="client_pic2"></div>
+                    </div>
+                </div>
+                <div class="block"></div>
+                <!-- c.案例分享 -->
+                <div class="page p3" id="showCase">
+                    <div class="showCaseTitle pagetitle" id="showCaseTitle">
+                        <!--<div class="showCase_t1">CREATE ACTION</div>  -->
+                        <div id="showCase_t1" class="en_title">
+                            <div class="motionText" id="showCase_t1_t1"></div>
+                            <div class="motionText" id="showCase_t1_t2"></div>
+                            <div class="motionText" id="showCase_t1_t3"></div>
+                            <div class="motionText" id="showCase_t1_t4"></div>
+                            <div class="motionText" id="showCase_t1_t5"></div>
+                            <div class="motionText" id="showCase_t1_t6"></div>
+                            <div class="motionText" id="showCase_t1_t7"></div>
+                            <div class="motionText" id="showCase_t1_t8"></div>
+                            <div class="motionText" id="showCase_t1_t9"></div>
+                            <div class="motionText" id="showCase_t1_t10"></div>
+                            <div class="motionText" id="showCase_t1_t11"></div>
+                            <div class="motionText" id="showCase_t1_t12"></div>
+                            <div class="motionText" id="showCase_t1_t13"></div>
+                        </div>
+                        <div class="showCase_t2 chi_title" id="showCase_t2">讓消費者動起來
+                        </div>
+                        <!--  <div class="showCase_ct"
+                    id="showCase_ct">李奧貝納不只創造ADS，更讓人採取ACTS！從虛擬到實體，在每一接觸點融入人們生活，而非打擾當消費者主動動起來，您的品牌自然生猛活躍</div>-->
+                        <div class="subTxtWrap mt_b">
+                            <div class="mainPageTxt">李奧貝納不只創造廣告，更能創造消費者行動</div>
+                            <div class="mainPageTxt">用內容創意帶動縝密的整合行銷服務</div>
+                            <div class="mainPageTxt">包括電視、平面、數位、社群行銷、
+                                <br class='phoneShow'>通路行銷、戶外媒體...</div>
+                        </div>
+                        <div class="pageBtn" id="showCase_b1">
+                            <div class="pageBtnLine"></div>
+                            <div class="pageBtnText">找到對的接觸點</div>
+                            <div class="pageBtnLine"></div>
+                        </div>
+                    </div>
+                    <div class="showCasePic mainPic">
+                        <div class="subPic" id="showCase_pic1"></div>
+                        <div class="subPic" id="showCase_pic2"></div>
+                    </div>
+                </div>
+                <div class="block"></div>
+                <!-- d.human-kind -->
+                <div class="page p4" id="humanKind">
+                    <div class="humanKindTitle pagetitle" id="humanKindTitle">
+                        <!--  <div class="humanKind_t1">HUMAN KIND</div>-->
+                        <div id="humanKind_t1" class="en_title">
+                            <div class="motionText" id="humanKind_t1_t1"></div>
+                            <div class="motionText" id="humanKind_t1_t2"></div>
+                            <div class="motionText" id="humanKind_t1_t3"></div>
+                            <div class="motionText" id="humanKind_t1_t4"></div>
+                            <div class="motionText" id="humanKind_t1_t5"></div>
+                            <div class="motionText" id="humanKind_t1_t6"></div>
+                            <div class="motionText" id="humanKind_t1_t7"></div>
+                            <div class="motionText" id="humanKind_t1_t8"></div>
+                            <div class="motionText" id="humanKind_t1_t9"></div>
+                            <div class="motionText" id="humanKind_t1_t10"></div>
+                        </div>
+                        <div class="humanKind_t2 chi_title" id="humanKind_t2">洞察人性</div>
+                        <div class="subTxtWrap mt_b">
+                            <div class="mainPageTxt">不干擾人們，而是與他們在一起</div>
+                            <div class="mainPageTxt">不是與人們溝通，而是讓他們參與其中</div>
+                            <div class="mainPageTxt">進而帶動人們行為的改變</div>
+                        </div>
+                        <div class="pageBtn" id="humanKind_b1">
+                            <div class="pageBtnLine"></div>
+                            <div class="pageBtnText">李奧貝納HUMANKIND工具</div>
+                            <div class="pageBtnLine"></div>
+                        </div>
+                    </div>
+                    <div class="humanKindPic mainPic">
+                        <div class="subPic" id="humanKind_pic1"></div>
+                        <div class="subPic" id="humanKind_pic2"></div>
+                    </div>
+                </div>
+                <div class="block"></div>
+                <!-- e.聯絡我們 -->
+                <div class="page p5" id="contactUs">
+                    <div class="starManMap"></div>
+                    <div class="contactUsTitle pagetitle" id="contactUsTitle">
+                        <!-- <div class="contactUs_t1">CONTACT US</div> -->
+                        <div id="contactUs_t1">
+                            <div class="motionText" id="contactUs_t1_t1"></div>
+                            <div class="motionText" id="contactUs_t1_t2"></div>
+                            <div class="motionText" id="contactUs_t1_t3"></div>
+                            <div class="motionText" id="contactUs_t1_t4"></div>
+                            <div class="motionText" id="contactUs_t1_t5"></div>
+                            <div class="motionText" id="contactUs_t1_t6"></div>
+                            <div class="motionText" id="contactUs_t1_t7"></div>
+                            <div class="motionText" id="contactUs_t1_t8"></div>
+                            <div class="motionText" id="contactUs_t1_t9"></div>
+                            <div class="motionText" id="contactUs_t1_t10"></div>
+                        </div>
+                        <div class="contactUs_t2" id="contactUs_t2">連繫我們</div>
+                        <!-- <div class="contactUs_t3" id="contactUs_t3">為您的品牌植入領導品牌DNA，綻放恆久璀璨的光芒，請立即與李奧貝納連繫</div> -->
+                        <div class="LBpen" id="LBpen">LBPen</div>
+                        <!-- <div class="contactUs_t4" id="contactUs_t4">我懶得開photoshop貼字了，鳩咪~</div> -->
+                        <div class="subTxtWrap">
+                            <div class="mainPageTxt">你渴望擁有領導品牌DNA?</div>
+                            <div class="mainPageTxt">或內心呼喚你伸手摘星？即刻連繫我們</div>
+                            <div class="mainPageTxt" style='color: white;'>Tel：886-2-77071081 張小姐</div>
+                        </div>
+                        <a class="pageBtn" href="mailto:jj.chang@leoburnett.com.tw">
+                            <div class="pageBtnLine"></div>
+                            <div class="pageBtnText">CONTACT US</div>
+                            <div class="pageBtnLine"></div>
+                        </a>
+                        <!-- <div class="contactInfo" id="contactInfo">email：jj.chang@leoburnett.com.tw,Tel：886-2-77071081張小姐</div> -->
+                    </div>
+                    <!-- <div class="contactUsPic mainPic">
+                        <div class="subPic" id="pic1"></div>
+                        <div class="subPic" id="pic2"></div>
+                        <div class="subPic" id="pic3"></div>
+                    </div> -->
+                </div>
+            </div>
+            <!-- 02-1. clientSubPage -->
+            <div class="client-subPage" id="client-subPage">
+                <div class="subPage-block"></div>
+                <div id="clinet-innerPageWrap">
+                    <div class="subItemWrap" id='clientWall'>
+                        <div class="client-innerPage">
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c1_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c1.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c2_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c2.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c3_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c3.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c4_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c4.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c5_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c5.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c6_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c6.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c7_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c7.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c8_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c8.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c9_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c9.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c10_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c10.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c11_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c11.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c12_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c12.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c13_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c13.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c14_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c14.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c15_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c15.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c16_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c16.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c17_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c17.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c18_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c18.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c19_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c19.png);"></div>
+                            </div>
+                            <div class="subItem">
+                                <div class="offLogo" style="background-image: url(images/clientSubPage/c20_b.png);"></div>
+                                <div class="onLogo" style="background-image: url(images/clientSubPage/c20.png);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 02-2. showCaseSubPage -->
+            <div class="showCase-subPage" id="showCase-subPage">
+                <div class="subPagce-block"></div>
+                <div class="showCase-innerPage">
+                    <div class="subItemWrap" id='showCaseWall'>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/1_bb.jpg' data-uTubeID='6bFxeQ3A7gc'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/1_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">麥當勞</div>
+                                    <div class="caseName">妖怪手錶舞</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/2_bb.jpg' data-uTubeID='iN2RnpFvn-g'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/2_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">麥當勞</div>
+                                    <div class="caseName">母親節</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/3_bb.jpg' data-uTubeID='NAmgiJoblrw'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/3_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">麥當勞</div>
+                                    <div class="caseName">30歲的約定 </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/4_bb.jpg' data-uTubeID='Ivx83zmBPq8'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/4_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">麥當勞叔叔之家慈善基金會</div>
+                                    <div class="caseName">愛不找零 櫃台篇</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/5_bb.jpg' data-uTubeID='sXbGr26NMDs'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/5_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">Heineken</div>
+                                    <div class="caseName">看不見的鏡子</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/6_bb.jpg' data-uTubeID='2QBtQlgtbVY'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/6_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">新光三越</div>
+                                    <div class="caseName">過年卡利High 72變篇</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/7_bb.jpg' data-uTubeID='gFgHs7aR1cA'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/7_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">中華汽車</div>
+                                    <div class="caseName">為愛出發</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/8_bb.jpg' data-uTubeID='oodrOwzJ1yc'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/8_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">中華汽車</div>
+                                    <div class="caseName">OUTLANDER 有Bear來小劇場</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/9_bb.jpg' data-uTubeID='e4cHbf_jSxI'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/9_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">大潤發</div>
+                                    <div class="caseName">老婆的口白</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/10_bb.jpg' data-uTubeID='4ZAYsSRa01A'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/10_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">富士愛膝足翻轉式護腿機</div>
+                                    <div class="caseName">一天生活</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/11_bb.jpg' data-uTubeID='ziYEowfXSz4'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/11_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">Johnnie Walker</div>
+                                    <div class="caseName">快樂成功學 健身篇</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/12_bb.jpg' data-uTubeID='9g9kdt929zo'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/12_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">Johnnie Walker</div>
+                                    <div class="caseName">快樂成功學 小籠包篇</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem videoBtn" data-BigBg='images/showCaseSubPage/13_bb.jpg' data-uTubeID='wSdNk21-zW4'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/13_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">Samsung</div>
+                                    <div class="caseName">變身A咖</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem webBtn" data-url='http://campaign.mcdonalds.com.tw/McCafe/'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/14_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">McCafé</div>
+                                    <div class="caseName">官方網站</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem webBtn" data-url='http://www.regenttaipei.com/'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/15_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">晶華酒店</div>
+                                    <div class="caseName">官方網站</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="subItem webBtn" data-url='http://www.lemeridien-taipei.com/'>
+                            <div class="picWrap">
+                                <div class="onPic picContainer" style='background-image: url(images/showCaseSubPage/16_b.jpg);'>
+                                </div>
+                            </div>
+                            <div class="caseInfoWrap">
+                                <div class="caseInfoContainer">
+                                    <div class="caseTitle">寒舍艾美酒店</div>
+                                    <div class="caseName">官方網站</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="clearfloat"></div> -->
+                    </div>
+                </div>
+                <div id="blackClip"></div>
+            </div>
+            <!-- 02-3. videoPage -->
+            <div class="videoPage coverBg hide" id="videoPage">
+                <div id="vidoeBox"></div>
+                <div class="clozBtn"></div>
+                <!-- <video id="showCasePlayer" class="video-js vjs-default-skin" controls preload="none" poster="" data-setup="{}">
+                </video> -->
+            </div>
+            <!-- 02-4. posterPage -->
+            <div class="posterPage" id="posterPage">
+                <div class="posterWrap">
+                    <div id="posterContainer"><img id="poster" src=""></div>
+                    <!--  <div class="preloader" id="preloader_poster"></div>-->
+                </div>
+                <div id="posterloaderBar" class="loadingBar">
+                </div>
+            </div>
+            <!-- 03. humanKind -->
+            <div class="humanKind-subPage subPage" id="humanKind-subPage">
+                <div id="humanKind-innerPage">
+                    <div id="humanKindPic"></div>
+                    <!-- <img id="humanKindPic" src="images\humanKind\humanKind.png"> -->
+                </div>
+            </div>
+        </div>
+        <!-- 03. border -->
+        <!-- 04. headerNav -->
+        <div class="header" id='header'>
+            <div class="headerContainer">
+                <div id="menuBtn"></div>
+                <div class="nav whiteBgNav" id="mainNav">
+                    <ul>
+                        <li class="navBtn">
+                            <a pageId="#index" id="navItem1">第一的奧秘</a>
+                        </li>
+                        <li class="navBtn">
+                            <a pageId="#client" id="navItem2">成效證明一切</a>
+                        </li>
+                        <li class="navBtn">
+                            <a pageId="#showCase" id="navItem3">讓消費者行動</a>
+                        </li>
+                        <li class="navBtn">
+                            <a pageId="#humanKind" id="navItem4">洞察人性</a>
+                        </li>
+                        <li class="navBtn">
+                            <a pageId="#contactUs" id="navItem5">聯繫我們</a>
+                        </li>
+                    </ul>
+                    <div id="headerPen">
+                        <div id="shraeBtn" onclick="window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)));console.log(location.href);"></div>
+                    </div>
+                </div>
+                <div class="navBlackBg"></div>
+                <div class="mainLogo"></div>
+                <!-- <div class="logoContainer">
+                <a href="#" class='logo'></a>
+            </div> -->
+                <!-- <div id="clozBtn_forShowCase"></div> -->
+            </div>
+            <div class="borderContainer">
+                <div class="sideBorder" id="sideBorder">
+                    <div class="b-top"></div>
+                    <div class="b-left b-side"></div>
+                    <div class="b-right b-side"></div>
+                    <div class="b-Bottom-left"></div>
+                    <div class="b-Bottom-right"></div>
+                </div>
+                <div class="scrollDwonIcon" id="scrollDwonIcon">
+                    <div class="scrollArr" id='scrollArr'></div>
+                </div>
+                <div id="backBtn">
+                    <div class="backText"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 05. sideMenu -->
+        <div class="sideMenu">
+            <ul>
+                <li class="sideMenu_item">
+                    <a href="#index"></a>
+                </li>
+                <li class="sideMenu_item">
+                    <a href="#client"></a>
+                </li>
+                <li class="sideMenu_item">
+                    <a href="#showCase"></a>
+                </li>
+                <li class="sideMenu_item">
+                    <a href="#humanKind"></a>
+                </li>
+                <li class="sideMenu_item">
+                    <a href="#contactUs"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- <audio id='bgMusic' preload="auto" loop="loop" autostart="false" type="audio/mpeg" volume="50" width='0' height='0'> -->
+    <!--[if lte IE 8]>
+    <embed class='bgMusic' src="http://ad.arcww.com.tw/arChung/LBsiteTest/sound/bgMusic.mp3" preload="auto" loop="loop" autostart="true" height='0' width='0%'>
+        <![endif]-->
+
+</html>

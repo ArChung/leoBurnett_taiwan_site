@@ -1,0 +1,42 @@
+
+
+
+
+#humanKind-subPage
+	visibility: hidden
+	left: 100%
+
+
+
+#humanKind-innerPage
+	position: absolute 
+	top: 55px
+	bottom: 0	
+	border: 1px solid #000
+	box-sizing: border-box
+	background-image: url("../images/humanKind/humanKindBG.jpg")		
+	width: 100%
+	+divGoVerticalCenter_forMom
+	#humanKindPic
+		+divGoVerticalCenter_forKid
+		
+		+pc 
+			background-image: url("../images/humanKind/humanKind.png")
+			+aspect-ratio(1170px,486px)
+			+background-size(contain)
+			max-width: 1193px	
+			width: 84% 
+		+phone 
+			background-image: url("../images/humanKind/m_humanKind.png")
+			width: 75%
+			+aspect-ratio(640px,916px)
+			+background-size(contain)
+ 
+		// width: 84%
+		// margin: 0 auto
+		// position: absolute
+		// left: 6%
+		// top: 15% 
+
+
+

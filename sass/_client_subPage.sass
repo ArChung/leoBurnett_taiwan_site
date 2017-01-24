@@ -1,0 +1,201 @@
+$border-color: #E0DBD5
+
+
+
+
+.wrap3 
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+
+
+.client-subPage 
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 100%
+	visibility: hidden
+
+#clinet-innerPageWrap
+	width: 100%
+	top: 55px
+	bottom: 0
+	position: absolute
+	+phone 
+		top: 90px
+		overflow-y: scroll
+	.subItemWrap
+		height: auto!important
+		width: 100%
+		min-width: 200px
+		position: relative
+		transform: perspective(50em) rotateY(0deg) translateX(0px) translateZ(0px)
+		
+		.client-innerPage
+			position: relative
+			top: 0px
+			bottom: 0px
+			//background-color: #EFEFF0
+			box-sizing: border-box
+			width: 100%	
+			height: auto
+			//transform: perspective(50em)  translateZ(0px)
+			transform: perspective(50em) rotateY(0deg) translateX(0px) translateZ(0px)
+			+clearfix
+			
+
+			
+
+			.subItem
+				position: relative
+				top: 0
+				left: 0
+				width: 20%
+				height: 250px
+				border-right: 1px solid $border-color
+				border-bottom: 1px solid $border-color
+				box-sizing: border-box
+				float: left
+				//background-color: #123
+				background-image: url("../images/ceilBg.png")
+				background-size: 100% 100%
+				overflow: hidden
+				+bgScale100_forIE8('ceilBg.png')
+				transform: perspective(50em) rotateY(0deg) translateX(0px)
+				+pc 
+					&:nth-child(5n)
+						border-right: none
+					&:nth-last-child(-n+5)
+						border-bottom: none
+				&:after 
+					content: ''
+					position: absolute
+					top: 0%
+					left: 0%
+					background-color: rgba(224,219,213,.3)
+					width: 100%
+					height: 100%
+					+opacity(0)
+					+dTime(0.3s)
+				=logo 
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background-position: 50% 50%
+					background-repeat: no-repeat
+					+dTime(0.4s)
+				.offLogo
+					+logo
+					+opacity(1)
+				.onLogo
+					+logo
+					+opacity(0)
+				+pc
+					&:hover 
+						
+						&:after 
+							width: 100%
+							height: 100%
+							top: 0%
+							left: 0%
+							+opacity(1)
+						.offLogo
+							+opacity(0)
+						.onLogo
+							+opacity(1)
+				
+				+phone 
+					width: 50%
+					.offLogo
+						+opacity(0)
+					.onLogo
+						+opacity(1)
+
+				// visibility: hidden
+// 	position: absolute
+// 	width: 100%
+// 	height: 100%
+// 	top: 0%
+// 	left: 0%
+// 	background-color: rgba(224,219,213,.3)
+		
+		
+
+		
+.client-menu
+	width: 100%
+	height: 59px
+	position: absolute
+	background-image: url("../images/clientSubPage/client_bg.png")
+	border-bottom: 1px solid  $border-color
+	//top: 55px
+	.client-menuSet
+		width: 717px
+		overflow: hidden
+		margin: 0 auto
+		margin-top: 16px
+		.client-menuBtn
+			float: left
+			cursor: pointer
+			
+
+@for $i from 1 to 8
+	#client-menuBtnB#{$i}
+		.onBtn
+			+bg('clientSubPage/#{$i}b.png')
+		.offBtn	
+			+bg('clientSubPage/#{$i}b_r.png')
+			visibility: hidden
+			margin-top: -30px
+		//margin-left: 6px
+		//float: left
+		//display: block
+
+.subPage-block
+	//background-color: gray
+	height: 55px
+	width: 100%
+	position: absolute
+	top: 0
+	left: 0
+
+
+
+
+	
+
+.logoContainer
+	position: absolute
+
+	width: 100%
+	height: 100%
+	text-align: center
+	i 
+		height: 100%
+		display: inline-block
+	*
+		vertical-align: middle
+// .onLogo
+// 	visibility: hidden
+	
+
+// .onLogoBg
+// 	visibility: hidden
+// 	position: absolute
+// 	width: 100%
+// 	height: 100%
+// 	top: 0%
+// 	left: 0%
+// 	background-color: rgba(224,219,213,.3)
+
+
+
+
+
+
+	

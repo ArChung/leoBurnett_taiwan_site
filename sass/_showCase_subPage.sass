@@ -1,0 +1,223 @@
+$border-color: #E0DBD5
+
+
+
+.videoPage
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	// display: none
+	+phone 
+		+divGoVerticalCenter_forMom
+	#vidoeBox
+		border: 1px solid #8c775c
+		+pc
+			+halfDiv(854px/2,480px/2)
+			overflow: hidden	
+			+dTime(0.6s)
+			background-color: black
+			&.show
+				+halfDiv(854px,480px)
+				margin-top: -240px + 26px
+			.ad-container,.ad-container-single-media-element-annotations,.ad-overlay
+				display: none
+		+phone 
+			+divGoVerticalCenter_forKid
+			+halfDiv(608px/2,342px/2)
+			&.show
+				+halfDiv(608px,342px)
+				
+			
+			
+	.clozBtn
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: 445px
+		margin-top: -213px
+		+bg('clozBtn.png')
+		
+		cursor: pointer
+		+rotate(-90deg)
+		+opacity(0)
+
+		&.show
+			+rotate(0deg)
+			+opacity(1)
+			+dTime(0.4s)
+			
+		&:hover 
+			+rotate(90deg)
+			
+	
+		+phone 
+			margin-left: 279px
+
+.showCase-subPage
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	right: 100%
+
+	//left: 100%
+	visibility: hidden
+	//border: 1px solid red 
+	box-sizing: border-box
+	transform: perspective(50em) rotateY(0deg) translateX(0px) translateZ(0px)
+	
+	
+
+.subPage-block
+	//background-color: gray
+	height: 55px
+	width: 100%
+	position: absolute
+	top: 0
+	left: 0
+
+
+
+.showCase-innerPage
+	position: absolute
+	top: 55px
+	bottom: 0
+	//background-color: #EFEFF0
+	box-sizing: border-box
+	//border: 1px solid red
+	width: 100%	
+	height: auto
+	overflow: hidden
+	+phone 
+		top: 90px
+		overflow-y: scroll
+	.subItemWrap
+		height: auto!important
+		height: 200px
+		width: 100%
+		min-width: 200px
+		position: relative
+		transform: perspective(50em) rotateY(0deg) translateX(0px) translateZ(0px)
+		+clearfix
+
+
+	
+
+
+
+	.subItem
+		position: relative
+		top: 0
+		left: 0
+		width: 25%
+		height: 250px
+		float: left
+		//background-color: #123
+		//background-image: url("../images/ceilBg.png")
+		//background-size: 100% 100%
+		overflow: hidden
+		//+bgScale100_forIE8('ceilBg.png')
+		transform: perspective(50em) rotateY(0deg) translateX(0px)
+		cursor: pointer
+		//border: 1px solid red 
+		//box-sizing: border-box
+		transform: perspective(50em) rotateY(0deg) translateX(0px)
+		
+		.caseInfoWrap
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			+divGoVerticalCenter_forMom
+			+dTime(0.3s)
+			.caseInfoContainer
+				+divGoVerticalCenter_forKid
+				color: white 
+				.caseTitle
+					font-size: 15px
+					// margin-top: 40px
+					+dTime(0.3s)
+					+shadowTxt
+				.caseName
+					font-size: 15px
+					+dTime(0.3s)
+					+shadowTxt
+					+opacity(0)
+					margin-top: -5px
+		.picWrap
+			height: 100%
+			width: 100%
+			position: relative
+			overflow: hidden
+			+dTime(1s)				
+		&:hover 
+			.picWrap
+				+scale(1.1) 
+			.caseInfoWrap
+				background-color: rgba(black, 0.5)
+				.caseInfoContainer
+					.caseTitle
+						// margin-top: 10px
+					.caseName
+						+opacity(1)	
+						margin-top: 5px	
+		+phone 
+			width: 50%
+#blackClip
+	position: absolute
+	top: 10px
+	left: 10px
+	height: 100px
+	width: 100px
+	visibility: hidden
+	background-color: black
+
+
+.clearfloat
+	clear: both
+	height: 0
+	font-size: 1px
+	line-height: 0px
+
+
+
+
+
+
+.picContainer
+	+coverBg
+	position: absolute
+	top: 0
+	left: 0
+	width: 325px
+	height: 192px
+	background-color: black
+	// img 	
+	// 	width: 100%
+	// 	height: 100%
+	
+	
+
+
+
+
+.caseType
+	margin: 0 auto
+
+	
+
+
+
+
+ 
+
+ 
+
+
+		
+
+
+

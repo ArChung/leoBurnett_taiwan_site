@@ -1,0 +1,17 @@
+.sideMenu
+	position: fixed
+	top: 50%
+	right: 24px
+	margin-top: -46px
+	+phone 
+		display: none
+	ul
+		.sideMenu_item
+			margin-top: 1px
+			display: block
+			cursor: pointer
+			+bg('sideMenuDot_off.png')
+			//border: 1px solid red
+
+		.sideMenu-on
+			+bg('sideMenuDot_on.png')

@@ -1,0 +1,515 @@
+
+$mpTxtColor: #f0f0f0
+$mpBtnColor: #e4c48b
+.testDemoCut
+	position: absolute
+	top: 0
+	left: 0
+	+bg('cut/cut5.png')
+
+.pageBtn
+	display: block
+	margin: 0px auto
+	margin-top: 26px
+
+	width: 306px
+	position: relative
+	z-index: 2
+	+phone 
+		margin-top: 40px	
+
+
+	&:hover
+		cursor: pointer
+		text-decoration: none
+	.pageBtnLine
+		+bg('textLine.png')
+		position: relative
+		top: 0
+
+	.pageBtnText 
+		margin: 10px auto
+		color: $mpBtnColor
+		text-align: center
+		font-size: 15px
+		letter-spacing: 4px
+		+phone 
+			font-size: 22px
+			letter-spacing: 6px
+
+a[href^=tel]  
+	color: inherit
+	text-decoration: none
+
+
+.subPic
+	position: absolute
+	top: 0
+	left: 0
+
+.block
+	width: 100%
+	//box-sizing: border-box
+	//border: 1px solid red
+	height: 1200px
+
+.mainPageTxt
+	text-align: center
+	color: $mpTxtColor
+	font-size: 16px
+	margin-bottom: 7px
+	letter-spacing: 3.5px
+	+phone 
+		font-size: 22px
+.mt_b
+	margin-top: 25px	
+
+.content_text
+	ul 
+		
+		margin: 31px auto 0
+		li
+			width: 100%
+			height: 17px
+			margin-bottom: 17px
+			background-repeat: no-repeat 
+		
+		.text1
+			background-position: center  0px
+			
+		.text2
+			background-position: center  -34px 
+		
+		.text3
+			background-position: center -68px 
+		
+		.text4
+			background-position: center -102px 
+		
+
+//----- a.indexPage -----//
+#index
+	+divGoVerticalCenter_forMom
+.indexTitle
+	+divGoVerticalCenter_forKid
+	margin-top: 20px
+	//width: 618px
+	// position: absolute
+	// top: 50%
+	// left: 50%
+	// margin-top: -63px
+	// margin-left: -304px
+
+	#index_t1
+		margin: 0 auto
+		// width: 618px
+		height: 30px
+		position: relative
+		//+bg('index_t1.png')
+		//+hide-text
+		+phone 
+			display: none
+		
+	
+	.pageBtn
+		.pageBtnText
+			// +bg('index_bt1.png')
+			// +hide-text
+
+	
+	#index_t2
+		margin: 24px auto 0
+		+bg('index_t2.png')
+		+hide-text
+		+phone 
+			+bg('m_t1.png')
+
+		
+			
+	@for $i from 1 to 23
+		#index_t1_t#{$i}
+			+bg('titleIndex/indexTitle_#{$i}.png')
+			display: inline-block
+			margin: 0px
+			transform: perspective(800px) rotateY(0deg) translateX(0px) translateY(0px) translateZ(0px)
+			float: left
+
+	@media screen and (min-width: 1500px)
+		// margin-left: -405px
+		// margin-top: -80px
+		#index_t1
+			height: 40px
+		#index_t2
+			+bg('index_t2_big.png')
+		@for $i from 1 to 23
+			#index_t1_t#{$i}
+				+bg('titleIndex/indexTitle_big_#{$i}.png')
+
+// #index_t1_t1
+// 	margin-left: 1px
+// #index_t1_t23
+// 	display: inline-block
+// 	margin: 0px
+// 	margin-left: 1px
+// 	transform: perspective(800px) rotateY(0deg) translateX(0px) translateY(0px) translateZ(0px)
+// 	float: left
+// 	+bg('titleIndex/indexTitle_18.png')
+//----- b.clientPage -----//
+#client
+	+phone 
+		+divGoVerticalCenter_forMom
+	
+		
+.clientTitle
+	+pc 
+
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -110px
+		margin-left: 56px
+	+phone 
+		+divGoVerticalCenter_forKid
+		padding-bottom: 250px
+	
+	#client_t1
+		margin: 0 auto
+		width: 377px
+		height: 23px
+		position: relative
+		+phone 
+			display: none
+	.client_t2
+		margin: 16px auto 0
+		+bg('client_t2.png')
+		+hide-text
+		+phone 
+			+bg('m_t2.png')
+			margin-top: 0
+	
+	/*.client_ct
+		margin: 30px auto 0
+		+bg('client_t3.png')
+		+hide-text*/
+	
+	
+	#client_ct
+		ul
+			width: 401px 
+			li 
+				background-image: url("../images/client_text.png")
+				position: relative
+
+
+	// .pageBtn
+	// 	.pageBtnText
+	// 		+bg('client_bt1.png')
+	// 		+hide-text
+
+
+
+
+@for $i from 1 to 16
+	+pc
+		#client_t1_t#{$i}
+			+bg('titleClient/clientTitle_#{$i}.png')
+			display: inline-block
+			margin: 0px
+			margin-left: 1px
+			transform: perspective(800px) rotateY(0deg) translateX(0px) translateY(0px) translateZ(0px)
+			float: left
+
+
+.mainPic
+	display: block
+	position: absolute
+	top: 50%
+	left: 50%
+	
+#client_pic1
+	+bg('clientPic01.png')	
+	margin-top: -338px
+	margin-left: -765px
+	+phone 
+		+bg('m_p1.png')
+		margin-top: 80px
+		margin-left: -470px
+
+
+#client_pic2
+	+bg('clientPic02.png')
+	margin-top: 66px
+	margin-left: 306px
+	+phone 
+		display: none
+ 
+
+
+//----- c.show-case -----//
+#showCase
+	+phone 
+		+divGoVerticalCenter_forMom
+.showCaseTitle
+	//width: 408px
+	+pc
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -110px
+		margin-left: -500px 
+	+phone 
+		+divGoVerticalCenter_forKid
+		padding-bottom: 250px
+
+	//.showCase_t1
+	//	margin: 0 auto
+	//	+bg('showCase_t1.png')
+	//	+hide-text
+	#showCase_t1
+		margin: 0 auto
+		width: 298px
+		height: 23px
+		position: relative
+		+phone 
+			display: none
+	.showCase_t2
+		margin: 16px auto 0
+		+bg('showCase_t2.png')
+		+hide-text
+		+phone
+			+bg('mt_3.png')
+	
+	/*.showCase_ct
+		margin: 30px auto 0
+		+bg('showCase_t3.png')
+		+hide-text*/
+
+	// #showCase_ct
+	// 	ul 
+	// 		width: 448px
+	// 		li 
+	// 			background-image: url("../images/showCase_text.png")
+
+
+	.pageBtn
+		.pageBtnText
+			// +bg('showCase_bt1.png')
+			// +hide-text
+
+
+	
+
+
+@for $i from 1 to 12 
+	+pc
+		#showCase_t1_t#{$i}
+			+bg('titleshowCase/showCaseTitle_#{$i}.png')
+			display: inline-block
+			margin: 0px
+			margin-left: 1px
+			transform: perspective(800px) rotateY(0deg) translateX(0px) translateY(0px) translateZ(0px)
+			float: left
+
+
+#showCase_pic1
+	+bg('showCase_Pic01.png')	
+	margin-top: -346px
+	margin-left: -79px
+	+phone 
+		+bg('m_p2.png')
+		margin-top: 80px
+		margin-left: -390px
+#showCase_pic2
+	+bg('showCase_Pic02.png')
+	margin-top: -36px
+	margin-left: -941px
+	+phone 
+		display: none
+	
+//----- d.human-kind -----//
+#humanKind
+	+phone 
+		+divGoVerticalCenter_forMom
+.humanKindTitle
+	+pc
+		width: 385px
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -110px
+		margin-left: -52px
+	+phone 
+		+divGoVerticalCenter_forKid
+		padding-bottom: 250px
+
+	//.humanKind_t1
+	//	margin: 0 auto
+	//	+bg('humanKind_t1.png')
+	//	+hide-text
+	#humanKind_t1
+		margin: 0 auto
+		width: 239px
+		height: 23px
+		position: relative
+		+phone 
+			display: none
+	.humanKind_t2
+		margin: 16px auto 0
+		+bg('humanKind_t2.png')
+		+hide-text
+		+phone 
+			+bg('mt_4.png')
+			margin-top: 0
+	
+	/*.humanKind_ct
+		margin: 30px auto 0
+		+bg('humanKind_t3.png')
+		+hide-text*/
+	
+	// #humanKind_ct
+	// 	ul 
+	// 		width: 342px
+	// 		li 
+	// 			background-image: url("../images/humanKind_text.png")
+
+	
+
+
+	.pageBtn
+		.pageBtnText
+			
+			letter-spacing: 2px
+			// +bg('humanKind_bt1.png')
+			// +hide-text
+
+@for $i from 1 to 11
+	+pc
+		#humanKind_t1_t#{$i}
+			+bg('titleHumanKind/humanKindTitle_#{$i}.png')
+			display: inline-block
+			margin: 0px
+			margin-left: 1px
+			transform: perspective(800px) rotateY(0deg) translateX(0px) translateY(0px) translateZ(0px)
+			float: left
+
+#humanKind_pic1
+	margin-top: -288px
+	margin-left: -773px
+	// +bg('humanKind_pic01.png')
+	+bg('humanKind_pic01.png')
+	+phone 
+		+bg('m_p3.png')
+		margin-top: 110px
+		margin-left: -400px
+
+#humanKind_pic2
+	margin-top: -6px
+	margin-left: 278px
+	+bg('humanKind_pic02.png')
+	+phone 
+		display: none
+
+
+//----- e.contact-us -----//
+
+
+.starManMap
+	width: 100%
+	height: 100%
+	position: absolute
+	
+#contactUs
+	+phone 
+		+divGoVerticalCenter_forMom
+.contactUsTitle
+	+pc
+		width: 748px
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-top: -152px
+		margin-left: -374px
+	+phone 
+		+divGoVerticalCenter_forKid
+		// padding-bottom: 100px
+
+	//.contactUs_t1
+	//	margin: 0 auto
+	//	+bg('contactUs_t1.png')
+	//	+hide-text
+	
+	.contactUs_t2
+		margin: 16px auto 0
+		+bg('contactUs_t2.png')
+		+hide-text
+		+phone 
+			+bg('mt_5.png')
+	
+	.contactUs_t3
+		margin: 33px auto 0
+		+bg('contactUs_t3.png')
+		+hide-text
+	
+	.contactUs_t4
+		margin: -12px auto 0
+		+bg('contactUs_t4.png')
+		+hide-text
+
+	.LBpen 
+		// margin-top: -16px
+		margin: 10px auto 5px
+		position: relative
+		left: 18px
+		+bg('contactUs_picPen.png')
+		+hide-text
+		+phone 
+			+bg('m_pen.png')
+			left: 12px
+
+		
+	.contactInfo
+		margin: 19px auto 0
+		+bg('contactUs_t5.png')
+		+hide-text
+	
+	#contactUs_t1
+		margin: 0 auto
+		width: 239px
+		height: 23px
+		position: relative
+		+phone 
+			display: none
+
+
+@for $i from 1 to 11
+	+pc
+		#contactUs_t1_t#{$i}
+			+bg('titleContactUs/contactUs_#{$i}.png')
+			display: inline-block
+			margin: 0px
+			margin-left: 1px
+			transform: perspective(800px) rotateY(0deg) translateX(0px) translateY(0px) translateZ(0px)
+			float: left
+
+//----------for subPage-----------//
+
+.subPage
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+
+.subPage-block
+	height: 55px
+	width: 100%
+	position: absolute
+	top: 0
+	left: 0
+
+.humanKind-innerPage
+	position: absolute
+	width: 100%
+	top: 55px
+	bottom: 0
+	
+	

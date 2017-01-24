@@ -1,0 +1,10 @@
+@import compass/css3
+
+
+@mixin circle($c-size:60px,$c-color:black)
+	width: $c-size
+	height: $c-size
+	+border-radius($c-size)
+	text-align: center
+	line-height: $c-size
+	background: $c-color
